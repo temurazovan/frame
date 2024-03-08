@@ -30,16 +30,7 @@ void printEmptyWidth(int frameLength) {
 }
 
 void printFrameText(std::string text) {
-    if (text.find(' ')) {
-        for (int i = 0; i < text.length(); i++) {
-            if (text[i] == ' ' && i + 1 <= text.length() && text[i + 1] != ' ') {
-                std::cout << "||" << " " << text.erase(i) << " " << "||" << std::endl;
-                std::cout << "||" << " " << text.substr(i + 1) << " " << "||" << std::endl;
-            }
-        }
-    } else {
-        std::cout << "||" << " " << text << " " << "||" << std::endl;
-    }
+    std::cout << "||" << " " << text << " " << "||" << std::endl;
 }
 
 void printFrame(int frameLength, int frameHeight, std::string text) {
